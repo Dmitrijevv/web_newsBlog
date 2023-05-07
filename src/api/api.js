@@ -1,8 +1,8 @@
 import * as axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'http://localhost:5000/api/',
-    // baseURL: 'https://server-m23.herokuapp.com/api/',
+    //baseURL: 'http://localhost:5000/api/',
+     baseURL: 'https://server-m2.vercel.app/api/',
     timeout: 1000,
     headers: {
         'Access-Control-Allow-Origin': '*',
