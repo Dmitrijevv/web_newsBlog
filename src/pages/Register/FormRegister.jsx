@@ -36,6 +36,26 @@ export const FormRegister = () => {
         <div>
             <h3>Реєстрація (Registration)</h3>
             <form className="form form-login" onSubmit={handleSubmit(onSubmit)}>
+            <div className="row">
+                    <div className="input-field col s6 col s12 m6">
+                        <input
+                            type="text"
+                            {...register("username",
+                                {
+                                    required: "Обовязкове поле (Required)",
+                                    minLength: {
+                                        value: 4,
+                                        message: "Має бути мінімум 4 символи (Must be at least 4 characters)"
+                                    }
+
+                                })} />
+                        <label>User name</label>
+                    </div>
+                </div>
+                <div>
+                {errors?.username && <p>{errors?.username?.message || "Помилка! (Error!)"}</p>}
+                </div>
+
                 <div className="row">
                     <div className="input-field col s6 col s12 m6">
                         <input

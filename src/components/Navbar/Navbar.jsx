@@ -17,7 +17,8 @@ const Navbar = () => {
                 {isLogin
                     ? <ul className="right">
                         <li><Link className="btn btn-floating btn-small cyan pulse" to="/posts"><i className="small material-icons right">add</i></Link></li>
-                        <li><a href="/" onClick={logout}>Вийти (Log out)</a></li>
+                        <li><Link className="btn btn-floating btn-small cyan " to="/profile"><i className="small material-icons right">person</i></Link></li>
+                        <li><a href="/" onClick={logout}><i className="small material-icons right">exit_to_app</i></a></li>
                     </ul>
 
                     : <><ul className="right">
