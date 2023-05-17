@@ -21,7 +21,7 @@ export const FormLogin = () => {
     try {
         await loginApi.login(data)
             .then(response => {
-                login(response.data.token, response.data.userId)
+                login(response.data.token, response.data.username)
             })
             setResponse("Авторизація пройшла успішно! (Authorization successful!)")
 
