@@ -8,7 +8,7 @@ export const FormLogin = () => {
 
     const navigate = useNavigate()
 
-    const { login} = useContext(AuthContext)
+    const {login} = useContext(AuthContext)
 
 
     const {register, handleSubmit, reset,  formState: {errors, isValid}} = useForm({
